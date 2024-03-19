@@ -9,6 +9,7 @@ module.exports = {
     menu:'./src/menu.js',
     about:'./src/about.js',
     data:'./src/data.js',
+    switch: './src/switch-tab.js',
   },
   devtool: "inline-source-map",
   plugins: [

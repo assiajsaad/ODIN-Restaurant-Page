@@ -1,6 +1,5 @@
 import { homeComponent } from "./home.js";
-import { aboutComponent } from "./about.js";
-import { menuComponent } from "./menu.js";
+import { switchTab } from "./switch-tab.js";
 import "./style.css";
 
 
@@ -12,27 +11,8 @@ import "./style.css";
 
  buttons.forEach(button => {
     button.addEventListener('click',(event)=>{
-        switchTab(event);
+        switchTab(event,contentDiv);
     })
  })
 
 
- function switchTab(event){
-    switch (event.target.id) {
-        case 'home':
-            contentDiv.removeChild(contentDiv.firstChild);
-            contentDiv.appendChild(homeComponent());
-            break;
-        case 'menu':
-            contentDiv.removeChild(contentDiv.firstChild);
-            contentDiv.appendChild(menuComponent());
-            break;
-        case 'about':
-            contentDiv.removeChild(contentDiv.firstChild);
-            contentDiv.appendChild(aboutComponent());
-            break;
-    
-        default:
-            break;
-    }
- }
