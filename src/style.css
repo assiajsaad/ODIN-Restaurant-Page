@@ -24,3 +24,16 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
+.home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home  p {
+    width: 70ch;
+}
