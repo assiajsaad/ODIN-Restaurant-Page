@@ -18,10 +18,10 @@ function menuComponent (){
         itemPrice.textContent = item.price;
         itemDesc.textContent = item.description;
 
-        itemDiv. appendChild(itemName);
-        itemDiv. appendChild(itemPrice);
-        itemDiv. appendChild(itemDesc);
-        itemDiv.id = index;
+        itemDiv.appendChild(itemName);
+        itemDiv.appendChild(itemPrice);
+        itemDiv.appendChild(itemDesc);
+        itemDiv.classList.add('item-card');
         menu.appendChild(itemDiv);
     })
 
